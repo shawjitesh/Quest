@@ -1,4 +1,4 @@
-package heap;
+package sequencevalley.heap;
 
 import java.util.*;
 
@@ -8,10 +8,10 @@ public class FindKPairsWithSmallestSums {
         List<List<Integer>> result = new ArrayList<>();
         if (nums1.length == 0 || nums2.length == 0) return result;
 
-        // Min-heap: [sum, i, j] where i = index in nums1, j = index in nums2
+        // Min-sequencevalley.heap: [sum, i, j] where i = index in nums1, j = index in nums2
         PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
 
-        // Seed heap with (nums1[i], nums2[0]) for all i in nums1
+        // Seed sequencevalley.heap with (nums1[i], nums2[0]) for all i in nums1
         for (int i = 0; i < Math.min(nums1.length, k); i++) {
             minHeap.offer(new int[]{nums1[i] + nums2[0], i, 0});
         }

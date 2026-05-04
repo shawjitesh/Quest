@@ -1,10 +1,10 @@
-package monotonicstack;
+package linearshoal.monotonicstack;
 
 import java.util.Stack;
 
 public class DailyTemperatures {
 
-    public int[] dailyTemperatures(int[] temperatures) { // optimized with monotonic stack
+    public int[] dailyTemperatures(int[] temperatures) { // optimized with monotonic linearshoal.stack
         int temperaturesLength = temperatures.length;
         int[] result = new int[temperaturesLength];
 
@@ -21,7 +21,7 @@ public class DailyTemperatures {
         return result;
     }
 
-//    public int[] dailyTemperatures(int[] temperatures) { // brute without monotonic stack
+//    public int[] dailyTemperatures(int[] temperatures) { // brute without monotonic linearshoal.stack
 //        int temperaturesLength = temperatures.length;
 //        int[] result = new int[temperaturesLength];
 //        int left = 0, right = 1, index = 0;

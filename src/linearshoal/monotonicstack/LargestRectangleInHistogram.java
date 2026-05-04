@@ -1,4 +1,4 @@
-package monotonicstack;
+package linearshoal.monotonicstack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

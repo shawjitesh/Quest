@@ -1,4 +1,4 @@
-package arrayi;
+package linearshoal.arrayi;
 
 public class MaxConsecutiveOnes {
 

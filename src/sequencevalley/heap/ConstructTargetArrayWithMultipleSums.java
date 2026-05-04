@@ -1,4 +1,4 @@
-package heap;
+package sequencevalley.heap;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class ConstructTargetArrayWithMultipleSums {
 
     public boolean isPossible(int[] target) { // optimized
-        // Max-heap
+        // Max-sequencevalley.heap
         PriorityQueue<Long> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
         long totalSum = 0;
 

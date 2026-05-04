@@ -1,4 +1,4 @@
-package monotonicstack;
+package linearshoal.monotonicstack;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
@@ -6,24 +6,24 @@ import java.util.Deque;
 
 public class FinalPricesWithASpecialDiscountInAShop {
 
-    public int[] finalPrices(int[] prices) { // optimized with monotonic stack
+    public int[] finalPrices(int[] prices) { // optimized with monotonic linearshoal.stack
         int n = prices.length;
         int[] result = Arrays.copyOf(prices, n); // default: no discount → keep original price
         Deque<Integer> stack = new ArrayDeque<>(); // stores indices, increasing order of prices
 
         for (int i = 0; i < n; i++) {
-            // prices[i] is a candidate discount for elements in the stack
+            // prices[i] is a candidate discount for elements in the linearshoal.stack
             while (!stack.isEmpty() && prices[stack.peek()] >= prices[i]) {
                 int idx = stack.pop();
                 result[idx] = prices[idx] - prices[i]; // prices[i] is the first smaller/equal → apply discount
             }
             stack.push(i);
         }
-        // indices still in stack → no discount found → result already has original price
+        // indices still in linearshoal.stack → no discount found → result already has original price
         return result;
     }
 
-//    public int[] finalPrices(int[] prices) { // brute without monotonic stack
+//    public int[] finalPrices(int[] prices) { // brute without monotonic linearshoal.stack
 //        int n = prices.length;
 //        int[] finalPrices = new int[n];
 //

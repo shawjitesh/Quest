@@ -1,4 +1,4 @@
-package arrayii;
+package linearshoal.arrayii;
 
 import java.util.ArrayList;
 import java.util.List;

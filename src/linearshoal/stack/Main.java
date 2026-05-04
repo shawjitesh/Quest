@@ -1,4 +1,4 @@
-package stack;
+package linearshoal.stack;
 
 import java.util.Arrays;
 import java.util.List;

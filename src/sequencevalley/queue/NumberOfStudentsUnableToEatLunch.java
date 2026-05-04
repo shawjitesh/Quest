@@ -1,4 +1,4 @@
-package queue;
+package sequencevalley.queue;
 
 public class NumberOfStudentsUnableToEatLunch {
 
@@ -17,11 +17,11 @@ public class NumberOfStudentsUnableToEatLunch {
 
         // Serve sandwiches to students
         for (int sandwich : sandwiches) {
-            // No student wants the circle sandwich on top of the stack
+            // No student wants the circle sandwich on top of the linearshoal.stack
             if (sandwich == 0 && circleStudentCount == 0) {
                 return squareStudentCount;
             }
-            // No student wants the square sandwich on top of the stack
+            // No student wants the square sandwich on top of the linearshoal.stack
             if (sandwich == 1 && squareStudentCount == 0) {
                 return circleStudentCount;
             }

@@ -1,4 +1,4 @@
-package arrayi;
+package linearshoal.arrayi;
 
 import java.util.Arrays;
 

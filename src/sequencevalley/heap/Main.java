@@ -1,4 +1,4 @@
-package heap;
+package sequencevalley.heap;
 
 import java.util.List;
 
